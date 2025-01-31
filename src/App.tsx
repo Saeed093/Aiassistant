@@ -15,7 +15,7 @@ function App() {
   const [screen, setScreen] = useState<"welcome" | "hairCheck" | "introVideo" | "call" | "outroVideo" | "results">("welcome");
   const [conversation, setConversation] = useState<IConversation | null>(null);
   const [loading, setLoading] = useState(false);
-  const [callDuration, setCallDuration] = useState<number>(60); // 60 sec timer
+  const [callDuration] = useState<number>(60); // 60 sec timer
 
   useEffect(() => {
     return () => {

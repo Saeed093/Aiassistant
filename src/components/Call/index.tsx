@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import { DailyAudio, useParticipantIds, useLocalSessionId } from '@daily-co/daily-react';
-import { Minimize, Maximize } from 'lucide-react';
+import { DailyAudio, useParticipantIds} from '@daily-co/daily-react';
+//import { Minimize, Maximize } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Video } from '../Video';
-import { Button } from '../ui/button';
+//import { Button } from '../ui/button';
 import ZaheenLogo from '../../assets/zaheen_logo.png';
 
 export const Call = () => {
   const remoteParticipantIds = useParticipantIds({ filter: 'remote' });
-  const localSessionId = useLocalSessionId();
-  const [mode, setMode] = useState<'full' | 'minimal'>('full');
+  //const localSessionId = useLocalSessionId();
+  const [mode] = useState<'full' | 'minimal'>('full');
 
 
   
