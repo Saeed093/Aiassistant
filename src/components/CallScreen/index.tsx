@@ -7,7 +7,7 @@ import { toast } from 'react-toastify'; // Import React-Toastify
 
 export const CallScreen = ({ conversation, handleEnd }: { conversation: IConversation, handleEnd: () => void }) => {
   const daily = useDaily();
-  const [timeLeft, setTimeLeft] = useState<number>(60); // Start countdown from 60 seconds
+  const [timeLeft, setTimeLeft] = useState<number>(65); // Start countdown from 60 seconds
 
   useEffect(() => {
     if (conversation && daily) {
