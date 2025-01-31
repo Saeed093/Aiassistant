@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '../ui/button';
 import ZaheenLogo from '../../assets/zaheen_logo.png';
-import Avatar from '../../assets/avatar.gif'
+import Avatar from '../../assets/Avatar.gif'
 
 
 
