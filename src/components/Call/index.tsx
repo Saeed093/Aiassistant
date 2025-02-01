@@ -18,7 +18,7 @@ export const Call = () => {
       'fixed bottom-20 right-20': mode === 'minimal',
     })}>
       <div className='relative'>
-      <h1 className='text-4xl font-bold mb-12'>Virtual Intelligent Responsive Avatar</h1>
+      <h1 className='text-4xl font-bold mb-12 mt-20'>Virtual Intelligent Responsive Avatar</h1>
         {
           remoteParticipantIds.length > 0 ?
             <Video
@@ -30,9 +30,10 @@ export const Call = () => {
                 })
               }
             /> :
-            <div className='relative flex items-center justify-center size-[50vh]'>
-              <p className='text-2xl text-black'>Waiting for others to join...</p>
+            <div className='relative flex items-center justify-center h-[50vh] w-full'>
+              <p className='text-2xl text-black text-center'>Session Starting..</p>
             </div>
+          
         
         }
           <h1 className='text-sm text-gray-500'>Powered by </h1>
