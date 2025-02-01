@@ -10,7 +10,7 @@ export const createConversation = async (): Promise<IConversation> => {
         'x-api-key': TAVUS_API_KEY,
       },
       body: JSON.stringify({
-        persona_id: 'pd5034779b18', 
+        persona_id: 'pf61372b856b', 
         replica_id: 'ref226fe7e',
         callback_url: "https://eokhug16bhdqrzm.m.pipedream.net",
         conversation_name: "Angry Visitor Training Conversation",
