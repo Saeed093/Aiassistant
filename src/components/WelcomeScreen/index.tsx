@@ -30,7 +30,7 @@ export const WelcomeScreen = ({ onStart, loading }: { onStart: () => void, loadi
                 <li>Stay in front of the camera so VIRA can see you.</li>
                 <li>
                   Understand the context: A guest at Pixel has arrived and was neither greeted by the staff nor escorted to his designated meeting room. You will act as a member of the staff. Your objective is to try and diffuse the
-                  situation within 60secs.
+                  situation within 2mins.
                 </li>
                 <li>Your video and audio data will be processed so you can get tailored feedback on your response.</li>
               </ul>
