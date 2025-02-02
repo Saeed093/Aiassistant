@@ -13,7 +13,7 @@ export const createConversation = async (): Promise<IConversation> => {
         persona_id: 'p247e2900cbb', 
         replica_id: 'ref226fe7e',
         callback_url: "https://eokhug16bhdqrzm.m.pipedream.net",
-        conversation_name: "Angry Visitor Training Conversation",
+        conversation_name: "AI Assistant",
         custom_greeting: "Hi i am gem how can i help you today?",
        
         
