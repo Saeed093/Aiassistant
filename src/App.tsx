@@ -3,7 +3,6 @@ import { WelcomeScreen } from "@/components/WelcomeScreen";
 import { HairCheckScreen } from "@/components/HairCheckScreen";
 import IntroVideoScreen from "@/components/IntroVideoScreen";
 import OutroVideoScreen from "@/components/OutroVideoScreen";
-import Results from "@/components/Results";
 import { CallScreen } from "@/components/CallScreen";
 import { createConversation, endConversation } from "@/api";
 import { IConversation } from "@/types";
@@ -73,11 +72,8 @@ function App() {
     setScreen("call");
   };
 
+  
   const handleExit = () => {
-    setScreen("results");
-  };
-
-  const handleRetry = () => {
     setScreen("welcome");
   };
 
@@ -89,7 +85,7 @@ function App() {
         {screen === "introVideo" && <IntroVideoScreen handleJoin={handleJoin} />}
         {screen === "call" && conversation && <CallScreen conversation={conversation} handleEnd={handleEnd} />}
         {screen === "outroVideo" && <OutroVideoScreen handleExit={handleExit} />}
-        {screen === "results" && <Results onRetry={handleRetry} />}
+        
       </DailyProvider>
     </main>
   );

@@ -10,11 +10,11 @@ export const createConversation = async (): Promise<IConversation> => {
         'x-api-key': TAVUS_API_KEY,
       },
       body: JSON.stringify({
-        persona_id: 'p42ea8e499c7', 
+        persona_id: 'p247e2900cbb', 
         replica_id: 'ref226fe7e',
         callback_url: "https://eokhug16bhdqrzm.m.pipedream.net",
         conversation_name: "Angry Visitor Training Conversation",
-        custom_greeting: "I can't believe I spent my time and money coming here today, only to feel unwelcome and lost, with no one around to help! This is absolutely unacceptable.",
+        custom_greeting: "Hi i am gem how can i help you today?",
        
         
       }),
@@ -35,3 +35,5 @@ export const createConversation = async (): Promise<IConversation> => {
 //persona demo :p9a95912
   // properties: { "max_call_duration": 65, }
   //updatedcode
+  //latest code
+  

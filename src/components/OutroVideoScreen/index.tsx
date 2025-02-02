@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Button } from "@/components/ui/button"; // Import Button component
-import ZaheenLogo from '../../assets/zaheen_logo.png';
+import ZaheenLogo from "../../assets/zaheen_logo.png";
 
 const OutroVideoScreen = ({ handleExit }: { handleExit: () => void }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -19,13 +18,13 @@ const OutroVideoScreen = ({ handleExit }: { handleExit: () => void }) => {
   // Function to transition when the video ends
   const handleVideoEnd = () => {
     console.log("Outro video finished! Exiting...");
-    handleExit(); // Exit or navigate away
+    handleExit(); // Navigate to the welcome screen
   };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-black p-6">
       {/* Title */}
-      <h1 className="text-4xl font-bold text-center mb-12">
+      <h1 className="text-4xl font-bold text-center mb-8">
         Thank You for Using Our Virtual Assistant
       </h1>
 
@@ -41,13 +40,15 @@ const OutroVideoScreen = ({ handleExit }: { handleExit: () => void }) => {
         />
       </div>
 
-      {/* Button */}
-      <Button
-        onClick={handleExit}
-        className="mt-6 bg-black text-white px-6 py-3 rounded-lg text-lg"
-      >
-        Continue to Results
-      </Button>
+      {/* Space Between Video and Button */}
+      <div className="mt-6">
+        <button
+          className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700"
+          onClick={handleExit} // Now correctly navigates to the welcome page
+        >
+          Retry
+        </button>
+      </div>
 
       {/* Powered By Section */}
       <div className="mt-10 text-center">
